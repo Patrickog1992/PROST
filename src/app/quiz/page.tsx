@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { QuizStepLayout } from '@/components/quiz/QuizStepLayout';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from '@/components/ui/card';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
 import { QuizOptionCard } from '@/components/quiz/QuizOptionCard';
@@ -239,14 +239,20 @@ const StepRenderer = ({ step, onNext }: { step: any; onNext: () => void }) => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                     {step.options.map((option: any) => (
-                    <div key={option.id} className="flex items-center space-x-3 rounded-lg border p-4 transition-colors hover:bg-muted/50 cursor-pointer" onClick={onNext}>
-                        <Checkbox id={option.id} className="h-6 w-6 pointer-events-none" />
+                    <div key={option.id} className="flex items-center space-x-3 rounded-lg border p-4 transition-colors hover:bg-muted/50">
+                        <Checkbox id={option.id} className="h-6 w-6" />
                         <Label htmlFor={option.id} className="text-lg cursor-pointer flex-1">
                         {option.label}
                         </Label>
                     </div>
                     ))}
                 </CardContent>
+                 <CardFooter className="flex justify-center">
+                    <Button size="lg" className="w-full max-w-xs text-lg" onClick={onNext}>
+                        Continuar
+                        <MoveRight className="ml-2 h-5 w-5" />
+                    </Button>
+                </CardFooter>
             </Card>
         );
       case 'OptionsStep':
