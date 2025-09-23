@@ -1,9 +1,42 @@
+
+'use client';
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { findImage } from "@/lib/utils";
 import { BadgeCheck, Dumbbell, Leaf, Lock, Utensils, Zap, Sprout } from "lucide-react";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+
+const CountdownTimer = () => {
+  const [timeLeft, setTimeLeft] = useState(10 * 60); // 10 minutes in seconds
+
+  useEffect(() => {
+    if (timeLeft <= 0) return;
+
+    const timer = setInterval(() => {
+      setTimeLeft((prevTime) => (prevTime > 0 ? prevTime - 1 : 0));
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const minutes = Math.floor(timeLeft / 60);
+  const seconds = timeLeft % 60;
+
+  return (
+    <div className="bg-red-600 text-white text-center p-4 rounded-lg w-full max-w-4xl mb-8">
+      <h2 className="text-xl md:text-2xl font-bold uppercase">
+        VOCÊ GANHOU 60% DE DESCONTO QUE VAI ACABAR EM:
+        <span className="text-yellow-400 font-mono text-3xl md:text-4xl block md:inline-block md:ml-2">
+          {String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}
+        </span>
+      </h2>
+    </div>
+  );
+};
+
 
 const bonuses = [
     { icon: Leaf, title: "GARRAFADA PODEROSA PARA PROSTATA", text: "Receita Completa em Vídeo passo a passo da Garrafada Poderosa. Uma fórmula tradicional e natural, preparada para ajudar a desinflamar a próstata, melhorar o fluxo urinário e devolver o bem estar." },
@@ -34,6 +67,7 @@ export default function OfertaPage() {
 
     return (
     <main className="flex flex-col items-center bg-background py-12 px-4">
+      <CountdownTimer />
       <div className="w-full max-w-4xl space-y-12 text-center">
         
         <div className="space-y-4">
