@@ -103,7 +103,7 @@ export default function OfertaPage() {
             </Card>
         </div>
 
-        <a href="#" target="_blank" className="block w-full max-w-lg mx-auto">
+        <a href="https://pay.kirvano.com/6c48b3ac-5af4-4805-9d3a-6e3acfe7c7e7" target="_blank" className="block w-full max-w-lg mx-auto">
              <Button size="lg" className="w-full text-xl h-14 bg-green-600 hover:bg-green-700 text-white shadow-lg animate-pulse">QUERO A RECEITA COMPLETA</Button>
         </a>
 
@@ -117,7 +117,7 @@ export default function OfertaPage() {
                     <p className="text-6xl font-extrabold text-primary">R$19,90</p>
                     <p className="text-lg">ou 2x de R$10,38</p>
                 </div>
-                <a href="#" target="_blank" className="block w-full">
+                <a href="https://pay.kirvano.com/6c48b3ac-5af4-4805-9d3a-6e3acfe7c7e7" target="_blank" className="block w-full">
                     <Button size="lg" className="w-full text-2xl h-16 bg-green-600 hover:bg-green-700 text-white shadow-lg">
                         QUERO AGORA
                     </Button>
