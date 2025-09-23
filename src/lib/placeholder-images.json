@@ -1,3 +1,88 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "age-40-49",
+      "description": "Homem 40-49 anos",
+      "imageUrl": "https://media.inlead.cloud/uploads/35298/2025-08-20/md-d8ZgW-chatgpt-image-4-de-ago-de-2025-22-55-08-removebg-preview.png",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "age-50-59",
+      "description": "Homem 50-59 anos",
+      "imageUrl": "https://media.inlead.cloud/uploads/35298/2025-08-20/md-mYaV3-chatgpt-image-4-de-ago-de-2025-22-55-11-removebg-preview.png",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "age-60-69",
+      "description": "Homem 60-69 anos",
+      "imageUrl": "https://media.inlead.cloud/uploads/35298/2025-08-20/md-Zx23l-chatgpt-image-4-de-ago-de-2025-22-55-50-removebg-preview.png",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "age-65-plus",
+      "description": "Homem 65+ anos",
+      "imageUrl": "https://media.inlead.cloud/uploads/35298/2025-08-20/md-2Q0yr-chatgpt-image-4-de-ago-de-2025-22-56-55-removebg-preview.png",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "report-ratinho",
+      "description": "Reportagem do Ratinho",
+      "imageUrl": "https://i.imgur.com/EWQk4Ob.jpeg",
+      "imageHint": "tv show host"
+    },
+    {
+      "id": "bladder-flow",
+      "description": "Fluxo da bexiga",
+      "imageUrl": "https://media.inlead.cloud/uploads/35298/2025-08-21/lg-qqkIs-fluxo-bexiga-2.jpg",
+      "imageHint": "medical diagram"
+    },
+    {
+      "id": "sexual-performance",
+      "description": "Desempenho sexual",
+      "imageUrl": "https://media.inlead.cloud/uploads/35298/2025-08-21/lg-UmuMQ-3a1fc763-0d01-4909-9a6c-2fcd1a1a077e.jpg",
+      "imageHint": "sad couple"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Homem para depoimento 1",
+      "imageUrl": "https://i.imgur.com/cGzrRGs.jpg",
+      "imageHint": "man smiling"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Homem para depoimento 2",
+      "imageUrl": "https://i.imgur.com/E1w9zPj.jpg",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Homem para depoimento 3",
+      "imageUrl": "https://i.imgur.com/f8o56sq.png",
+      "imageHint": "man happy"
+    },
+    {
+      "id": "product-bottle",
+      "description": "Garrafa do produto",
+      "imageUrl": "https://media.inlead.cloud/uploads/35298/2025-08-21/lg-P1xri-20250821224943.png",
+      "imageHint": "product bottle"
+    },
+    {
+      "id": "testimonial-4",
+      "description": "Homem para depoimento 4",
+      "imageUrl": "https://i.imgur.com/d2jduEE.png",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "testimonial-5",
+      "description": "Homem para depoimento 5",
+      "imageUrl": "https://i.imgur.com/QfJtgio.jpg",
+      "imageHint": "man smiling"
+    },
+    {
+      "id": "testimonial-6",
+      "description": "Homem para depoimento 6",
+      "imageUrl": "https://i.imgur.com/om1IUWv.jpg",
+      "imageHint": "man happy"
+    }
+  ]
 }
