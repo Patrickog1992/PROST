@@ -33,7 +33,7 @@ export default function AnalisePage() {
   }, [progress, router]);
 
   return (
-    <main className="flex min-h-screen w-full flex-col items-center justify-center bg-background p-4 text-center">
+    <main className="flex w-full flex-col items-center justify-center bg-background p-4 text-center">
       <div className="w-full max-w-2xl space-y-8">
         <h1 className="text-4xl font-bold font-headline text-primary animate-pulse">
           Analisando...

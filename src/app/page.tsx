@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function StartPage() {
   return (
-    <main className="flex min-h-screen w-full flex-col items-center justify-center bg-background p-4 sm:p-8">
+    <main className="flex w-full flex-col items-center justify-center bg-background p-4 sm:p-8">
       <Card className="w-full max-w-2xl text-center shadow-2xl">
         <CardHeader>
           <CardTitle className="font-headline text-4xl font-bold text-primary md:text-5xl">
