@@ -126,18 +126,22 @@ export default function OfertaPage() {
             </CardContent>
         </Card>
 
-        <div className="text-left space-y-4">
-            <h2 className="text-3xl font-bold font-headline text-center">Além da Receita, aqui estão os bônus que você vai ganhar:</h2>
-            {bonuses.map((bonus, index) => (
-                 <Card key={index} className="flex flex-col sm:flex-row items-start gap-4 p-4">
-                    <bonus.icon className="w-12 h-12 text-primary flex-shrink-0 mx-auto sm:mx-0" />
-                    <div>
-                        <h3 className="font-bold text-lg">{bonus.title}</h3>
-                        <p className="text-muted-foreground">{bonus.text}</p>
-                    </div>
-                </Card>
-            ))}
-        </div>
+        <Card className="text-left bg-muted/20">
+            <CardHeader>
+                <CardTitle className="text-3xl font-bold font-headline text-center">Além da Receita, aqui estão os bônus que você vai ganhar:</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+                {bonuses.map((bonus, index) => (
+                    <Card key={index} className="flex flex-col sm:flex-row items-start gap-4 p-4 shadow-sm">
+                        <bonus.icon className="w-12 h-12 text-primary flex-shrink-0 mx-auto sm:mx-0" />
+                        <div>
+                            <h3 className="font-bold text-lg">{bonus.title}</h3>
+                            <p className="text-muted-foreground">{bonus.text}</p>
+                        </div>
+                    </Card>
+                ))}
+            </CardContent>
+        </Card>
         
         <div className="space-y-6">
             <h2 className="text-3xl font-bold font-headline text-center">VEJA O QUE NOSSOS PACIENTES DIZEM:</h2>
