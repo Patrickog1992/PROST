@@ -122,7 +122,7 @@ export default function ResultadosPage() {
             <CardFooter>
                  <Link href="/oferta" className="w-full">
                     <Button size="lg" className="w-full text-xl h-16 animate-pulse">
-                        QUERO MINHA RECEITA AGORA
+                        QUERO MINHA RECEITA
                         <MoveRight className="ml-2" />
                     </Button>
                 </Link>
