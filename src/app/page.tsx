@@ -29,7 +29,7 @@ export default function StartPage() {
           <h2 className="text-2xl font-semibold md:text-3xl">
             Responda e descubra em menos de 1 minuto!
           </h2>
-          <Link href="/quiz/idade" passHref>
+          <Link href="/quiz" passHref>
             <Button size="lg" className="w-full max-w-sm animate-pulse text-lg">
               Começar o Quiz
               <MoveRight className="ml-2 h-5 w-5" />
