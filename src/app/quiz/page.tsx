@@ -139,7 +139,7 @@ const quizSteps = [
   },
 ];
 
-const StepRenderer = ({ step, onNext }: { step: any; onNext: () => void }) => {
+const StepRenderer = ({ step, onNext, onMultiNext }: { step: any; onNext: () => void; onMultiNext: () => void; }) => {
   const stepRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -247,7 +247,7 @@ const StepRenderer = ({ step, onNext }: { step: any; onNext: () => void }) => {
                     ))}
                 </CardContent>
                  <CardFooter className="flex justify-center">
-                    <Button size="lg" className="w-full max-w-xs text-lg" onClick={onNext}>
+                    <Button size="lg" className="w-full max-w-xs text-lg" onClick={onMultiNext}>
                         Continuar
                         <MoveRight className="ml-2 h-5 w-5" />
                     </Button>
@@ -302,7 +302,7 @@ const StepRenderer = ({ step, onNext }: { step: any; onNext: () => void }) => {
     }
   };
 
-  return <div ref={stepRef} className="min-h-[80vh] flex items-center justify-center py-16">{renderStep()}</div>
+  return <div ref={stepRef} className="flex items-center justify-center py-8">{renderStep()}</div>
 };
 
 
@@ -319,6 +319,13 @@ export default function QuizPage() {
       router.push('/analise');
     }
   };
+  
+    const handleMultiNext = () => {
+    // This function is for checklists, so it doesn't do anything special yet
+    // other than advancing to the next step.
+    handleNext();
+  };
+
 
   return (
     <div className="w-full">
@@ -326,6 +333,7 @@ export default function QuizPage() {
           key={currentStepIndex}
           step={quizSteps[currentStepIndex]}
           onNext={handleNext}
+          onMultiNext={handleMultiNext}
         />
     </div>
   );
