@@ -104,7 +104,7 @@ export default function OfertaPage() {
         </div>
 
         <a href="#" target="_blank" className="block w-full max-w-lg mx-auto">
-             <Button size="lg" className="w-full text-xl h-14 bg-green-600 hover:bg-green-700 text-white shadow-lg animate-pulse">PEGUE AGORA SUA RECEITA COMPLETA</Button>
+             <Button size="lg" className="w-full text-xl h-14 bg-green-600 hover:bg-green-700 text-white shadow-lg animate-pulse">QUERO A RECEITA COMPLETA</Button>
         </a>
 
         <Card className="bg-primary/5 shadow-2xl text-left">
