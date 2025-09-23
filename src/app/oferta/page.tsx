@@ -93,7 +93,7 @@ export default function OfertaPage() {
         </Card>
 
         <div className="text-left space-y-4">
-            <h2 className="text-3xl font-bold font-headline text-center">Além da Receita completa passo a passo da Garrafada, veja tudo que você vai receber: 👇🏻👇🏻👇🏻</h2>
+            <h2 className="text-3xl font-bold font-headline text-center">Além da Receita, aqui estão os bônus que você vai ganhar:</h2>
             {bonuses.map((bonus, index) => (
                  <Card key={index} className="flex flex-col sm:flex-row items-start gap-4 p-4">
                     <bonus.icon className="w-12 h-12 text-primary flex-shrink-0 mx-auto sm:mx-0" />
@@ -104,22 +104,25 @@ export default function OfertaPage() {
                 </Card>
             ))}
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {testimonials.map((testimonial) => {
-                const img = findImage(testimonial.id);
-                return (
-                    <Card key={testimonial.id} className="text-center shadow-md">
-                        <CardHeader className="items-center">
-                            {img && <Image src={img.imageUrl} alt={testimonial.name} width={80} height={80} className="rounded-full border-4 border-primary" data-ai-hint={img.imageHint} />}
-                            <CardTitle className="pt-2">{testimonial.name}</CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                            <p className="italic">"{testimonial.text}"</p>
-                        </CardContent>
-                    </Card>
-                )
-            })}
+        
+        <div className="space-y-6">
+            <h2 className="text-3xl font-bold font-headline text-center">VEJA O QUE NOSSOS PACIENTES DIZEM:</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {testimonials.map((testimonial) => {
+                    const img = findImage(testimonial.id);
+                    return (
+                        <Card key={testimonial.id} className="text-center shadow-md">
+                            <CardHeader className="items-center">
+                                {img && <Image src={img.imageUrl} alt={testimonial.name} width={80} height={80} className="rounded-full border-4 border-primary" data-ai-hint={img.imageHint} />}
+                                <CardTitle className="pt-2">{testimonial.name}</CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <p className="italic">"{testimonial.text}"</p>
+                            </CardContent>
+                        </Card>
+                    )
+                })}
+            </div>
         </div>
 
         <Card className="bg-muted/50 p-6 flex flex-col md:flex-row items-center gap-6 text-left">
