@@ -143,9 +143,8 @@ const StepRenderer = ({ step, onNext }: { step: any; onNext: () => void }) => {
   const stepRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (stepRef.current) {
-      stepRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
+    // We want the view to stay at the top.
+    window.scrollTo(0, 0);
   }, [step]);
   
   const renderStep = () => {
