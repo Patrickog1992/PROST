@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { MoveRight } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function StartPage() {
@@ -16,6 +17,15 @@ export default function StartPage() {
           <p className="text-xl text-foreground/80 md:text-2xl">
             Veja se a Garrafada vai te servir
           </p>
+          <div className="flex justify-center">
+            <Image
+              src="https://i.imgur.com/WQQ9zqM.jpeg"
+              alt="Garrafada"
+              width={300}
+              height={300}
+              className="rounded-lg"
+            />
+          </div>
           <h2 className="text-2xl font-semibold md:text-3xl">
             Responda e descubra em menos de 1 minuto!
           </h2>
