@@ -107,12 +107,6 @@ export default function OfertaPage() {
              <Button size="lg" className="w-full text-xl h-14 bg-green-600 hover:bg-green-700 text-white shadow-lg animate-pulse">QUERO A RECEITA COMPLETA</Button>
         </a>
         
-        <div className="bg-primary/10 border-2 border-primary/20 rounded-lg p-6 my-8">
-            <p className="text-lg md:text-xl font-semibold text-foreground/90 leading-relaxed">
-              <span className="font-bold">Como Funciona?</span> Com base no que você respondeu, montamos um protocolo ideal para iniciar sua recuperação de forma natural, segura e eficaz. Esse tratamento é indicado para homens com os mesmos sintomas e desafios que você relatou e os resultados têm sido surpreendentes!
-            </p>
-        </div>
-
         <Card className="bg-primary/5 shadow-2xl text-left">
             <CardHeader className="text-center">
                 <CardTitle className="text-3xl font-headline">OFERTA ESPECIAL POR TEMPO LIMITADO</CardTitle>
@@ -123,8 +117,13 @@ export default function OfertaPage() {
                     <p className="text-6xl font-extrabold text-primary">R$19,90</p>
                     <p className="text-lg">ou 2x de R$10,38</p>
                 </div>
+                <div className="bg-primary/10 border-2 border-primary/20 rounded-lg p-6 my-8">
+                    <p className="text-lg md:text-xl font-semibold text-foreground/90 leading-relaxed">
+                      <span className="font-bold">Como Funciona?</span> Com base no que você respondeu, montamos um protocolo ideal para iniciar sua recuperação de forma natural, segura e eficaz. Esse tratamento é indicado para homens com os mesmos sintomas e desafios que você relatou e os resultados têm sido surpreendentes!
+                    </p>
+                </div>
                 <a href="https://pay.kirvano.com/6c48b3ac-5af4-4805-9d3a-6e3acfe7c7e7" target="_blank" className="block w-full">
-                    <Button size="lg" className="w-full text-2xl h-16 bg-green-600 hover:bg-green-700 text-white shadow-lg">
+                    <Button size="lg" className="w-full text-2xl h-16 bg-green-600 hover:bg-green-700 text-white shadow-lg animate-pulse">
                         QUERO AGORA
                     </Button>
                 </a>
