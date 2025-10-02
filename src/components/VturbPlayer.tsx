@@ -22,7 +22,7 @@ export const VturbPlayer: FC<VturbPlayerProps> = ({ playerId, scriptId }) => {
     <>
       <vturb-smartplayer
         id={`vid-${playerId}`}
-        style={{ display: 'block', margin: '0 auto', width: '100%', maxWidth: '400px' }}
+        style={{ display: 'block', margin: '0 auto', width: '100%', maxWidth: '800px' }}
       ></vturb-smartplayer>
       <Script
         src={`https://scripts.converteai.net/${scriptId}/players/${playerId}/v4/player.js`}

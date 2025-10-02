@@ -120,7 +120,7 @@ export default function ResultadosPage() {
                 ))}
             </CardContent>
             <CardFooter>
-                 <Link href="/oferta" className="w-full">
+                 <Link href="/vsl" className="w-full">
                     <Button size="lg" className="w-full text-xl h-16 animate-pulse">
                         QUERO MINHA RECEITA
                         <MoveRight className="ml-2" />
