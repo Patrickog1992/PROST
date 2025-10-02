@@ -22,8 +22,9 @@ export default function VSLPage() {
   };
 
   return (
-    <main className="flex w-full flex-col items-center justify-center bg-black p-4 text-center">
+    <main className="flex w-full flex-col items-center justify-center bg-black p-4 text-center text-white">
       <div className="w-full max-w-4xl space-y-8">
+        <p className="text-lg italic">(Veja o vídeo com áudio ligado e depois clique em QUERO AGORA)</p>
         <div className="video-container">
           <VturbPlayer
             playerId="68de903625cb487df92f8f62"
