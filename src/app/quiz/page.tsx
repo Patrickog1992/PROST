@@ -22,6 +22,7 @@ const quizSteps = [
     id: 'melhorar',
     title: 'Marque todas as opções que deseja melhorar',
     component: 'ChecklistStep',
+    description: '(Marque quantas opções quiser e depois clique em continuar)',
     options: [
       { id: 'comfort', label: 'Urinar com mais conforto' },
       { id: 'sleep', label: 'Dormir sem acordar de madrugada' },
@@ -55,7 +56,7 @@ const quizSteps = [
   {
     id: 'sintomas',
     title: 'Você já sentiu algum desses sintomas abaixo?',
-    description: 'Marque todas opções que está sentindo ou já sentiu.',
+    description: 'Marque todas opções que está sentindo ou já sentiu. (Marque quantas opções quiser e depois clique em continuar)',
     component: 'ChecklistStep',
     options: [
       { id: 'pressure', label: 'Pressão ou queimação ao urinar' },
